@@ -7,9 +7,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,6 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+<!--        서울시 데이터는 http라서 http통신이 가능하도록 별도로 설정하여야함-->
 
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyASlccVJ9GzN4jBzEupi1mlisan27Cd5zA"/>
